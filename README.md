@@ -1,7 +1,7 @@
 # 🌍 Renewable Energy Website
 
 ## 🔗 Live Demo
-[Check out the website](your-live-demo-url)
+[Check out the website](https://ayushmgowda.github.io/CHE110-Renewable-Energy-Project/)
 
 ## 📌 About the Project
 This project is a **Renewable Energy Website** designed to promote awareness and provide information about sustainable energy sources like solar, wind, and hydro energy. It serves as an educational platform with engaging content, interactive visuals, and real-time energy statistics.

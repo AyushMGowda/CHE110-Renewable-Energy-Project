@@ -54,9 +54,9 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## 📧 Contact
 For any queries or suggestions, reach out to:
-- **Your Name**: [your-email@example.com](mailto:your-email@example.com)
+- **Your Name**: [your-email@example.com](mailto:ayushmgowda5@gmail.com)
 - **GitHub**: [github.com/AyushMGowda](https://github.com/AyushMGowda)
-- **LinkedIn**: [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
+- **LinkedIn**: [linkedin.com/in/your-profile](https://linkedin.com/in/ayush-m-gowda)
 
 ---
 ⭐ If you like this project, don't forget to star the repository!

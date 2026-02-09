@@ -1,0 +1,729 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 14px 28px;
+  background: #020617;
+  border-bottom: 1px solid #1e293b;
+}
+
+.logo {
+  font-size: 22px;
+  color: #22c55e;
+}
+
+/* nav links */
+.navbar nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #38bdf8;
+  font-weight: 500;
+  transition: 0.25s ease;
+}
+
+.navbar nav a:hover {
+  color: #22c55e;
+}
+
+/* ===== HERO ===== */
+.hero {
+  min-height: 70vh;
+
+  display: grid;
+  place-content: center;
+  text-align: center;
+
+  padding: 40px 20px;
+
+  background: linear-gradient(135deg, #22c55e, #0ea5e9);
+  color: white;
+}
+
+.hero h2 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* ===== GENERAL SECTIONS ===== */
+/* ===== INTRO VIDEO ===== */
+
+.intro-video {
+  width: 100%;
+  max-width: 1100px;
+  margin: 50px auto;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 255, 150, 0.12);
+}
+
+.intro-video video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.intro-image {
+  text-align: center;
+  margin: 50px auto 30px;
+}
+
+.intro-image img {
+  width: 90%;
+  max-width: 1000px;
+  border-radius: 14px;
+  box-shadow: 0 12px 35px rgba(0, 255, 150, 0.12);
+}
+
+.section {
+  padding: 70px 20px;
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #22c55e;
+}
+
+.section p {
+  max-width: 800px;
+  margin: auto;
+}
+
+.chart-box {
+  margin: 60px auto;
+  max-width: 900px;
+  text-align: center;
+}
+
+.chart-img {
+  width: 70%;
+  border-radius: 14px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+}
+
+/* ===== GRID FOR ENERGY TYPES ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* Section heading */
+.section-title {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 700;
+  color: #22c55e;
+  margin-bottom: 10px;
+}
+
+/* Subtitle */
+.section-subtitle {
+  text-align: center;
+  color: #9ca3af;
+  font-size: 18px;
+  margin-bottom: 60px;
+}
+
+/* spacing from navbar */
+.types-section {
+  padding-top: 60px;
+}
+
+.infographic-box {
+  margin: 80px auto;
+  max-width: 1100px;
+  text-align: center;
+}
+
+.infographic-img {
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+  transition: transform 0.4s ease;
+}
+
+.infographic-img:hover {
+  transform: scale(1.02);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  margin: 70px 0 45px;
+  background: linear-gradient(90deg, #22c55e, #38bdf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+
+/* cards */
+.card {
+  display: block;
+  text-decoration: none;
+  color: white;
+
+  background: #020617;
+  border: 1px solid #1e293b;
+
+  padding: 28px 16px;
+  border-radius: 14px;
+
+  font-size: 18px;
+  transition: 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  background: #0ea5e9;
+  border-color: #0ea5e9;
+}
+
+/* ===== BENEFITS LIST ===== */
+.section ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.section li {
+  margin: 10px 0;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background: #020617;
+  border-top: 1px solid #1e293b;
+  padding: 30px 20px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+
+  .hero h2 {
+    font-size: 30px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar nav a {
+    margin: 0 10px;
+  }
+}
+
+/* ===== LIGHT MODE ===== */
+body.light {
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+body.light .navbar,
+body.light .footer,
+body.light .card {
+  background: #ffffff;
+  color: #0f172a;
+  border-color: #e2e8f0;
+}
+
+
+/* ===== FADE ANIMATION ===== */
+.fade {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s ease;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* ===== DARK MODE BUTTON ===== */
+.dark-btn {
+  cursor: pointer;
+  background: #22c55e;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+}
+
+/* ===== INFO GRID ===== */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+
+/* ===== INFO CARD ===== */
+.info-card {
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 14px;
+  padding: 24px;
+  text-align: left;
+  transition: 0.25s ease;
+}
+
+.info-card h3 {
+  color: #22c55e;
+  margin-bottom: 10px;
+}
+
+.info-card:hover {
+  transform: translateY(-6px);
+  border-color: #22c55e;
+}
+
+/* ===== TYPES GRID ===== */
+
+.types-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 40px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 900px) {
+  .types-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .types-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* ===== ENERGY CARD ===== */
+
+.energy-card {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 18px;
+  padding: 30px 20px;
+  text-align: center;
+  transition: all 0.35s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+/* icon */
+.energy-card img {
+  width: 90px;
+  transition: transform 0.35s ease, filter 0.35s ease;
+}
+
+/* text hidden initially */
+.energy-card h3 {
+  margin-top: 18px;
+  opacity: 0.7;
+  transform: translateY(8px);
+  transition: all 0.35s ease;
+}
+
+/* ===== HOVER EFFECT ===== */
+
+.energy-card:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 12px 30px rgba(0, 255, 170, 0.15);
+}
+
+/* icon zoom + glow */
+.energy-card:hover img {
+  transform: scale(1.18);
+  filter: drop-shadow(0 0 12px rgba(0, 255, 170, 0.6));
+}
+
+/* text reveal */
+.energy-card:hover h3 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* ====== CSS for bio.html ======= */
+/* ===== MEDIA ===== */
+.full-img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.media {
+  width: 80%;
+  max-width: 800px;
+  border-radius: 12px;
+}
+
+/* ===== TEXT LAYOUT ===== */
+.text-section {
+  text-align: left;
+  max-width: 900px;
+}
+
+.side-img {
+  float: right;
+  width: 35%;
+  margin: 0 0 20px 20px;
+  border-radius: 12px;
+}
+
+/* ===== HOME BUTTON ===== */
+.home-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #22c55e;
+  font-weight: 600;
+}
+
+.home-btn img {
+  width: 40px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .side-img {
+    float: none;
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .media {
+    width: 100%;
+  }
+}
+/* ===== BIOMASS GREEN TONE ===== */
+
+/* subtle green hero gradient */
+.hero {
+  background: linear-gradient(135deg, #16a34a 0%, #065f46 50%, #020617 100%);
+}
+
+/* headings glow slightly green */
+.section h2,
+.logo {
+  color: #22c55e;
+  text-shadow: 0 0 8px rgba(34, 197, 94, 0.25);
+}
+
+/* paragraph readability with green tint */
+.text-section p {
+  color: #d1fae5;
+}
+
+/* soft green border glow on images & video */
+.full-img,
+.media,
+.side-img {
+  border: 1px solid rgba(34, 197, 94, 0.25);
+  box-shadow: 0 0 20px rgba(34, 197, 94, 0.08);
+}
+
+/* home button greener */
+.home-btn {
+  color: #4ade80;
+}
+
+.home-btn:hover {
+  color: #22c55e;
+}
+
+/* ===== GEOTHERMAL THEME ===== */
+
+.geo-theme .hero {
+  background: linear-gradient(135deg, #b45309 0%, #78350f 50%, #020617 100%);
+}
+
+.geo-theme .logo,
+.geo-theme .section h2 {
+  color: #f59e0b;
+  text-shadow: 0 0 10px rgba(245, 158, 11, 0.3);
+}
+
+.geo-theme .text-section p {
+  color: #fde68a;
+}
+
+.geo-theme .full-img,
+.geo-theme .media,
+.geo-theme .side-img {
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.12);
+}
+
+.geo-theme .home-btn {
+  color: #fbbf24;
+}
+
+.geo-theme .home-btn:hover {
+  color: #f59e0b;
+}
+
+/* ===== HYDRO THEME ===== */
+
+.hydro-theme .hero {
+  background: linear-gradient(135deg, #06b6d4 0%, #075985 50%, #020617 100%);
+}
+
+.hydro-theme .logo,
+.hydro-theme .section h2 {
+  color: #22d3ee;
+  text-shadow: 0 0 10px rgba(34, 211, 238, 0.35);
+}
+
+.hydro-theme .text-section p {
+  color: #cffafe;
+}
+
+.hydro-theme .full-img,
+.hydro-theme .media,
+.hydro-theme .side-img {
+  border: 1px solid rgba(34, 211, 238, 0.35);
+  box-shadow: 0 0 22px rgba(34, 211, 238, 0.15);
+}
+
+.hydro-theme .home-btn {
+  color: #67e8f9;
+}
+
+.hydro-theme .home-btn:hover {
+  color: #22d3ee;
+}
+
+/* ===== SOLAR THEME ===== */
+
+.solar-theme .hero {
+  background: linear-gradient(135deg, #f97316 0%, #b45309 50%, #020617 100%);
+}
+
+.solar-theme .logo,
+.solar-theme .section h2 {
+  color: #fb923c;
+  text-shadow: 0 0 10px rgba(251, 146, 60, 0.35);
+}
+
+.solar-theme .text-section p {
+  color: #ffedd5;
+}
+
+.solar-theme .full-img,
+.solar-theme .media,
+.solar-theme .side-img {
+  border: 1px solid rgba(251, 146, 60, 0.35);
+  box-shadow: 0 0 22px rgba(251, 146, 60, 0.15);
+}
+
+.solar-theme .home-btn {
+  color: #fdba74;
+}
+
+.solar-theme .home-btn:hover {
+  color: #fb923c;
+}
+
+/* ===== TIDAL THEME ===== */
+
+.tidal-theme .hero {
+  background: linear-gradient(135deg, #2563eb 0%, #4f46e5 50%, #020617 100%);
+}
+
+.tidal-theme .logo,
+.tidal-theme .section h2 {
+  color: #60a5fa;
+  text-shadow: 0 0 10px rgba(96, 165, 250, 0.35);
+}
+
+.tidal-theme .text-section p {
+  color: #dbeafe;
+}
+
+.tidal-theme .full-img,
+.tidal-theme .media,
+.tidal-theme .side-img {
+  border: 1px solid rgba(96, 165, 250, 0.35);
+  box-shadow: 0 0 22px rgba(96, 165, 250, 0.15);
+}
+
+.tidal-theme .home-btn {
+  color: #93c5fd;
+}
+
+.tidal-theme .home-btn:hover {
+  color: #60a5fa;
+}
+
+/* ===== WIND THEME ===== */
+
+.wind-theme .hero {
+  background: linear-gradient(135deg, #10b981 0%, #06b6d4 50%, #0b2288 100%);
+}
+
+.wind-theme .logo,
+.wind-theme .section h2 {
+  color: #34d399;
+  text-shadow: 0 0 10px rgba(52, 211, 153, 0.35);
+}
+
+.wind-theme .text-section p {
+  color: #d1fae5;
+}
+
+.wind-theme .full-img,
+.wind-theme .media,
+.wind-theme .side-img {
+  border: 1px solid rgba(34, 211, 238, 0.35);
+  box-shadow: 0 0 22px rgba(34, 211, 238, 0.15);
+}
+
+.wind-theme .home-btn {
+  color: #67e8f9;
+}
+
+.wind-theme .home-btn:hover {
+  color: #22d3ee;
+}
+
+/* SOLAR */
+.energy-card.solar:hover {
+  box-shadow: 0 12px 30px rgba(255, 130, 28, 0.35);
+}
+.energy-card.solar:hover img {
+  filter: drop-shadow(0 0 14px rgba(251, 111, 60, 0.8));
+}
+
+/* HYDRO */
+.energy-card.hydro:hover {
+  box-shadow: 0 12px 30px rgba(56, 189, 248, 0.35);
+}
+.energy-card.hydro:hover img {
+  filter: drop-shadow(0 0 14px rgba(56, 189, 248, 0.8));
+}
+
+/* WIND */
+.energy-card.wind:hover {
+  box-shadow: 0 12px 30px rgba(52, 211, 153, 0.35);
+}
+.energy-card.wind:hover img {
+  filter: drop-shadow(0 0 14px rgba(52, 211, 153, 0.8));
+}
+
+/* GEOTHERMAL */
+.energy-card.geo:hover {
+  box-shadow: 0 12px 30px rgba(245, 158, 11, 0.35);
+}
+.energy-card.geo:hover img {
+  filter: drop-shadow(0 0 14px rgba(245, 158, 11, 0.8));
+}
+
+/* BIOMASS */
+.energy-card.biomass:hover {
+  box-shadow: 0 12px 30px rgba(34, 197, 94, 0.35);
+}
+.energy-card.biomass:hover img {
+  filter: drop-shadow(0 0 14px rgba(34, 197, 94, 0.8));
+}
+
+/* TIDAL */
+.energy-card.tidal:hover {
+  box-shadow: 0 12px 30px rgba(99, 102, 241, 0.35);
+}
+.energy-card.tidal:hover img {
+  filter: drop-shadow(0 0 14px rgba(99, 102, 241, 0.8));
+}
+
+/* ===== INSIGHT SECTION ===== */
+
+.insight-section {
+  background: transparent;   /* remove visible block */
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* Quote image — bigger and clean */
+.quote-box img {
+  width: 100%;
+  max-width: 1000px;   /* increased size */
+  height: auto;
+  display: block;
+  margin: 0 auto 80px;
+}
+
+/* Map image */
+.map-box img {
+  width: 100%;
+  max-width: 650px;   /* slightly bigger */
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+  opacity: 0.95;
+}
+
+.map-box h2 {
+  font-family: "Times New Roman", serif;
+  font-style: italic;
+  font-size: 36px;
+  color: #e5e7eb;
+}
+/* Quote section spacing */
+.quote-box {
+  margin: 80px auto;        /* space top & bottom */
+  text-align: center;
+}
+
+/* Image sizing */
+.quote-img {
+  width: 75%;
+  max-width: 900px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
